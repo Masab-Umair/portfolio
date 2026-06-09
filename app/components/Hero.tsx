@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Mail, MessageSquare } from "lucide-react";
-import Link from "next/link";
+import { ArrowDown, Mail } from "lucide-react";
 
 interface MousePosition {
   x: number;

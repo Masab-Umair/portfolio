@@ -9,7 +9,6 @@ import {
   ExternalLink,
   MapPin,
 } from "lucide-react";
-import Link from "next/link";
 
 interface ContactOption {
   icon: React.ComponentType<{ className?: string }>;

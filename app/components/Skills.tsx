@@ -8,11 +8,6 @@ import {
   Zap,
   GitBranch,
   Shield,
-  TrendingUp,
-  Cpu,
-  Globe,
-  RefreshCw,
-  Terminal,
   CheckCircle,
 } from "lucide-react";
 

@@ -5,8 +5,6 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
   generateEtags: true,
-  optimizeFonts: true,
-  swcMinify: true,
   images: {
     unoptimized: true,
     formats: ["image/avif", "image/webp"],

@@ -229,8 +229,8 @@ MIT License - feel free to use this as a template for your own portfolio.
 For questions or issues:
 - Email: umairmasab935@gmail.com
 - Phone: +92 324-1583954
-- LinkedIn: [Connect with me](https://linkedin.com/in/masabumair)
-- GitHub: [View my code](https://github.com/masabumair)
+- LinkedIn: [Connect with me](https://linkedin.com/in/masabb)
+- GitHub: [View my code](https://github.com/Masab-Umair)
 
 ---
 

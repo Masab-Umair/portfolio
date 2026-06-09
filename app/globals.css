@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root variables */
+:root {
+  --scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(9, 9, 11);
+  color: rgb(250, 250, 250);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(9, 9, 11);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(63, 63, 70);
+  border-radius: 5px;
+  border: 2px solid rgb(9, 9, 11);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(113, 113, 122);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-color: rgb(63, 63, 70) rgb(9, 9, 11);
+  scrollbar-width: thin;
+}
+
+/* Selection styles */
+::selection {
+  background-color: rgb(59, 130, 246);
+  color: rgb(250, 250, 250);
+}
+
+::-moz-selection {
+  background-color: rgb(59, 130, 246);
+  color: rgb(250, 250, 250);
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgb(59, 130, 246);
+  outline-offset: 2px;
+}
+
+/* Smooth animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+  }
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Button reset */
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-family: inherit;
+}
+
+/* Input styles */
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text selection */
+p,
+span,
+a {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Disable text selection on UI controls */
+button,
+[role="button"] {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Premium blur effect */
+.backdrop-blur-premium {
+  backdrop-filter: blur(20px);
+  background-color: rgba(9, 9, 11, 0.7);
+}
+
+/* Cursor interactive class */
+.cursor-interactive {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hide scrollbar while keeping functionality */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Performance optimizations */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  button,
+  a {
+    color: inherit;
+  }
+}

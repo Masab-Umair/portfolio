@@ -37,14 +37,14 @@ const contactOptions: ContactOption[] = [
     icon: Linkedin,
     label: "LinkedIn",
     value: "Connect with me",
-    href: "https://linkedin.com/in/masabumair",
+    href: "https://linkedin.com/in/masabb",
     type: "link",
   },
   {
     icon: Github,
     label: "GitHub",
     value: "View my code",
-    href: "https://github.com/masabumair",
+    href: "https://github.com/Masab-Umair",
     type: "link",
   },
 ];

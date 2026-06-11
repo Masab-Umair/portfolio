@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import MouseFollower from "./components/MouseFollower";
 
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "I build high-performance web applications and custom software architectures.",
     type: "website",
-    url: "https://masabumair.com",
+    url: "https://masab.vercel.app",
     siteName: "Masab Umair Portfolio",
   },
 };
@@ -52,6 +53,7 @@ export default function RootLayout({
         <MouseFollower />
         <div className="fixed inset-0 pointer-events-none bg-gradient-to-b from-zinc-900/20 via-zinc-950 to-zinc-950" />
         {children}
+        <Analytics />
       </body>
     </html>
   );

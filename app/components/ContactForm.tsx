@@ -73,23 +73,43 @@ export default function ContactForm() {
       return;
     }
 
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY?.trim();
+    const formId = process.env.NEXT_PUBLIC_WEB3FORMS_FORM_ID?.trim();
+
+    if (!accessKey && !formId) {
+      setError(
+        "Form submission is not configured. Please add NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY or NEXT_PUBLIC_WEB3FORMS_FORM_ID to your environment."
+      );
+      setIsSubmitting(false);
+      return;
+    }
+
+    const endpoint = formId
+      ? `https://api.web3forms.com/submit/${formId}`
+      : "https://api.web3forms.com/submit";
+
+    const payload: Record<string, string | boolean> = {
+      subject: formData.subject,
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      botcheck: formData.botcheck,
+    };
+
+    if (accessKey) {
+      payload.access_key = accessKey;
+    }
+
     setError("");
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
-          subject: formData.subject,
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          botcheck: formData.botcheck,
-        }),
+        body: JSON.stringify(payload),
       });
 
       const result = await response.json();

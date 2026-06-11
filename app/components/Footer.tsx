@@ -9,6 +9,7 @@ import {
   ExternalLink,
   MapPin,
 } from "lucide-react";
+import ContactForm from "./ContactForm";
 
 interface ContactOption {
   icon: React.ComponentType<{ className?: string }>;
@@ -163,6 +164,10 @@ export default function Footer() {
           {contactOptions.map((option, index) => (
             <ContactCard key={index} option={option} index={index} />
           ))}
+        </motion.div>
+
+        <motion.div variants={contentVariants} className="mb-16">
+          <ContactForm />
         </motion.div>
 
         {/* Location info */}

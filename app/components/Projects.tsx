@@ -19,7 +19,7 @@ const projects: Project[] = [
     title: "Gotham Polling (US)",
     description:
       "Data visualization platform translating complex US polling insights into interactive web experiences. Real-time analytics dashboards for political research organizations.",
-    tags: ["Next.js", "React", "Data Visualization"],
+    tags: ["WordPress", "Elementor Pro", "Data Visualization"],
     link: "https://gothampolling.com/",
     featured: true,
   },
@@ -33,11 +33,59 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Hybrid Media Engine",
+    title: "Mynd Myself",
     description:
-      "Custom WordPress architectural slider handling simultaneous cross-format video and image assets seamlessly with optimized performance and core web vitals.",
-    tags: ["Performance Tuning", "Core Web Vitals", "WordPress"],
-    link: "#",
+      "Healthcare directory and community platform connecting patients with holistic practitioners. Built with WordPress, Elementor Pro, WooCommerce/membership tools, advanced multi-parameter search, practitioner portals, event management, and Zoom integration.",
+    tags: ["WordPress", "Elementor Pro", "WooCommerce", "Membership", "Directory"],
+    link: "https://www.myndmyself.com/",
+  },
+  {
+    id: 4,
+    title: "Order Software Keys",
+    description:
+      "Digital e-commerce store for software license keys with automated instant delivery, secure checkout, multi-currency formatting, user dashboards, and product reviews. Includes a custom user-based plugin that tracks logged-in clients and reveals specific products, categories, and pages only to authorized customers.",
+    tags: ["WordPress", "WooCommerce", "E-commerce", "Custom Plugin", "License Delivery", "Elementor Pro"],
+    link: "https://ordersoftwarekeys.com/",
+  },
+  {
+    id: 5,
+    title: "MindSurf Media",
+    description:
+      "High-conversion agency landing page with direct booking and lead magnet workflows. Built on WordPress with Elementor-style layout, dynamic CSS, scroll animations, and a structured sales funnel for B2B lead generation.",
+    tags: ["WordPress", "Elementor Pro", "Landing Page", "Lead Gen", "Animations"],
+    link: "https://mindsurfmedia.com/",
+  },
+  {
+    id: 6,
+    title: "Grand Zawiyah of America",
+    description:
+      "Community nonprofit platform featuring donation progress tracking, event ticketing, media resources, and a custom Elementor-compatible mixed image/video slider plugin for rich multimedia presentation.",
+    tags: ["WordPress", "Elementor Pro", "Donations", "Events", "PHP", "Custom Plugin"],
+    link: "https://grandzawiyahofamerica.org/",
+  },
+  {
+    id: 7,
+    title: "Sat Morn",
+    description:
+      "Nostalgia-driven apparel and merchandise brand site with immersive storytelling and investor-focused pitch sections, built for engaging brand launches and merch presentation.",
+    tags: ["WordPress", "Elementor Pro", "Merch", "Branding", "Storytelling"],
+    link: "https://satmorn.com/",
+  },
+  {
+    id: 8,
+    title: "Candid Smiles Orthodontics",
+    description:
+      "High-end orthodontic website designed for precision healthcare branding and patient trust, built using WordPress and Elementor Pro with polished visual design.",
+    tags: ["WordPress", "Elementor Pro", "Healthcare", "Design", "Branding"],
+    link: "https://candidsmilesorthodontics.com/",
+  },
+  {
+    id: 9,
+    title: "The Opulent Cleaning Co.",
+    description:
+      "Rapid deployment service website created on Wix with a client-friendly launch approach and polished presentation for a cleaning business.",
+    tags: ["Wix", "Brand Launch", "Service Website", "Client Autonomy", "Design"],
+    link: "https://www.theopulentcleaningco.net/",
   },
 ];
 

@@ -107,8 +107,9 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
   return (
     <motion.div
       variants={containerVariants}
-      whileHover={{ y: -8, transition: { duration: 0.3 } }}
-      className={`group relative rounded-xl overflow-hidden bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800/50 hover:border-blue-500/30 p-8 flex flex-col justify-between transition-all duration-300 ${
+      whileHover={{ y: -5 }}
+      transition={{ type: "spring", stiffness: 240, damping: 22 }}
+      className={`group relative rounded-xl overflow-hidden bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800/50 hover:border-blue-500/30 p-8 flex flex-col justify-between transition-colors duration-300 ${
         project.featured ? "lg:col-span-2" : ""
       }`}
     >
@@ -149,7 +150,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
           <motion.a
             href={project.link}
             whileHover={{ x: 4 }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: "spring", stiffness: 280, damping: 24 }}
             className="cursor-interactive flex items-center gap-2 text-blue-400 hover:text-cyan-400 font-medium text-sm transition-colors duration-300"
           >
             View Project
@@ -160,7 +162,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
           <motion.a
             href={project.github}
             whileHover={{ x: 4 }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: "spring", stiffness: 280, damping: 24 }}
             className="cursor-interactive flex items-center gap-2 text-zinc-400 hover:text-zinc-200 font-medium text-sm transition-colors duration-300"
           >
             <Github className="w-4 h-4" />

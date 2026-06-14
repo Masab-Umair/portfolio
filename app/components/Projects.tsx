@@ -20,16 +20,16 @@ const projects: Project[] = [
     description:
       "Data visualization platform translating complex US polling insights into interactive web experiences. Real-time analytics dashboards for political research organizations.",
     tags: ["Next.js", "React", "Data Visualization"],
-    link: "#",
+    link: "https://gothampolling.com/",
     featured: true,
   },
   {
     id: 2,
-    title: "Bespoke Medical Dashboard",
+    title: "Hope Urgent and Primary Care Clio",
     description:
-      "Custom appointment management CRUD engine built for Hope Urgent & Primary Care (USA) to handle end-to-end patient logistics, scheduling, and medical records.",
-    tags: ["PHP", "Custom Plugins", "API Integration"],
-    link: "#",
+      "Full WordPress site built with Elementor Pro plus a custom PHP/JS/CSS appointment management plugin. Includes a role-based Doctor login and dashboard for approving, rejecting, and deleting pending appointments, while keeping doctors out of the WordPress admin.",
+    tags: ["WordPress", "Elementor Pro", "PHP", "Custom Plugin", "Appointment Management"],
+    link: "https://hopeurgentandprimarycareclio.com/",
   },
   {
     id: 3,
